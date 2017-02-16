@@ -20,9 +20,22 @@ $(function() {
   $('#nav-btn').click(function() {
     get_value_1()
     get_value_2()
-    $('#nav-txt').show()
+    $('#nav-txt-1').show()
+    $('#nav-txt-1').text('Поднимись на' + ' '+ $('#aud').val().substr(0, 1) + ' ' + 'этаж')
     $('#aud').hide()
     $('#nav-btn').hide()
     $('#main').hide()
+    $('#back-nav').show()
+
+  })
+})
+
+$(function(){
+  $('#back-nav').click(function() {
+    $('#nav-txt-1').hide()
+    $('#aud').show()
+    $('#nav-btn').show()
+    $('#main').show()
+    $('#back-nav').hide()
   })
 })

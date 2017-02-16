@@ -1,0 +1,47 @@
+button {
+  display: block;
+  border: 2px solid #141414;
+  background: white;
+  width: 112px;
+  height: 52px;
+  font-size: 20px;
+}
+
+button:hover {
+  background: black;
+  color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+#back-nav {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 189px;
+  height: 92px;
+}
+
+nav.back {
+  display: block;
+  position: absolute;
+  border-left: 3px black solid;
+  border-bottom: 3px black solid;
+  transform: rotate(45deg);
+  height: 20px;
+  width: 20px;
+  margin: 35px;
+}
+
+p.back-txt {
+  display: block;
+  font-size: 18px;
+  width: 54px;
+  height: 18px;
+}

@@ -5,8 +5,15 @@
 
 p {
   font-family: 'Avenir', sans-serif;
+}
+
+p#main {
+  font-family: 'Avenir', sans-serif;
   font-size: 30px;
-  margin: 20vh 0 0 20vh;
+  min-width: 255px;
+  height: 96px;
+  text-align: center;
+  top: -20%;
 }
 
 input {
@@ -17,22 +24,43 @@ input {
   max-width: 51px;
 }
 
-#nav-txt {
+#nav-txt-1 {
   display: none;
-}
-
-button {
   position: absolute;
-  display: block;
-  border: 2px solid #141414;
-  background: white;
-  width: 112px;
-  height: 52px;
-  margin: 90px 40px 40px 410px;
-  font-size: 20px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 30px;
+  min-width: 255px;
+  height: 96px;
+  text-align: center;
+  top: -20%;
 }
 
-button:hover {
-  background: black;
-  color: white;
+#nav-txt-2 {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 30px;
+  min-width: 255px;
+  height: 96px;
+  text-align: center;
+}
+
+
+p,
+button#nav-btn {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
