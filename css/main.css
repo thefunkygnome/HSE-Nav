@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url(../fonts/avenir-reg.otf) format("opentype");
+}
+
+p {
+  font-family: 'Avenir', sans-serif;
+  font-size: 30px;
+  margin: 20vh 0 0 20vh;
+}
+
+input {
+  border: none;
+  border-bottom: 1px black solid;
+  font-family: 'Avenir', sans-serif;
+  font-size: 30px;
+  max-width: 51px;
+}
+
+#nav-txt {
+  display: none;
+}
+
+button {
+  position: absolute;
+  display: block;
+  border: 2px solid #141414;
+  background: white;
+  width: 112px;
+  height: 52px;
+  margin: 90px 40px 40px 410px;
+  font-size: 20px;
+}
+
+button:hover {
+  background: black;
+  color: white;
+}
