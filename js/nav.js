@@ -43,6 +43,7 @@ $(function() {
     $('#main').hide()
     $('#back-nav').show()
     $('.about').hide()
+    $('.hselogo').hide()
   })
 })
 
@@ -56,6 +57,7 @@ $(function(){
     $('.about').show()
     $('.about-txt-1').hide()
     $('.about-txt-2').hide()
+    $('.hselogo').show()
   })
 })
 

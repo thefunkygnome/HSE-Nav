@@ -118,35 +118,8 @@ input {
   line-height: 19px;
   width: 186px;
   margin-top: 452px;
-  margin-left: 522px;
+  right: 200px;
   height: 78px;
-}
-
-#nav-txt-1 {
-  top: 168px;
-  left: 674px;
-}
-
-#nav-txt-2 {
-  top: 315px;
-  left: 674px;
-}
-
-#nav-txt-1,
-#nav-txt-2 {
-  width: 164px;
-}
-
-#nav-txt-3 {
-  width: 180px;
-  top: 456px;
-  left: 674px;
-}
-
-#nav-txt-4 {
-  top: 573px;
-  left: 674px;
-  width: 190px;
 }
 
 #nav-txt-1,
@@ -154,17 +127,16 @@ input {
 #nav-txt-3,
 #nav-txt-4 {
   display: block;
-  position: absolute;
+  position: relative;
   font-family: 'Avenir Regular', sans-serif;
   font-size: 30px;
   color: white;
   text-align: left;
   line-height: 41px;
-  right: 0;
-  left: 107px;
-  bottom: 0;
-  margin: auto;
+  left: 29px;
+  width: 200px;
 }
+
 
 
 p,
@@ -174,8 +146,20 @@ button#nav-btn {
 }
 
 .route {
-  width: 400px;
-  height: 400px;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+  width: 300px;
+  height: 538px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+
 }
 
 figure {
@@ -207,4 +191,18 @@ figure {
   height: 223px;
   background-image: url(../img/fig3.svg);
   margin: 580px 0 0 1170px;
+}
+
+.hselogo {
+  display: block;
+  position: absolute;
+  width: 28px;
+  height: 119px;
+  background-repeat: no-repeat;
+  background-image: url(../img/hse-logo.svg);
+  margin: auto;
+  top: 610px;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }

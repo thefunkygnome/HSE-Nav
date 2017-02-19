@@ -44,7 +44,7 @@ nav.back {
 
 p.back-txt {
   display: block;
-  font-family: 'Avenir Regular', sans-serif;  
+  font-family: 'Avenir Regular', sans-serif;
   font-size: 17px;
   width: 49px;
   height: 23px;;
@@ -54,35 +54,11 @@ p.back-txt {
 
 .bullet {
   display: block;
-  position: fixed;
+  position: relative;
   font-family: 'Futuris Black', sans-serif;
-  height: 46px;
+  height: 138px;
   font-size: 110px;
-  line-height: 47px;
+  line-height: 117px;
   text-align: center;
   color: white;
-  right: 0;
-  left: -413px;
-  bottom: 0;
-  margin: auto;
-}
-
-.bullet#p1 {
-  top: -385px;
-  left: -226px;
-}
-
-.bullet#p2 {
-  top: -80px;
-  left: -228px;
-}
-
-.bullet#p3 {
-  top: 203px;
-  left: -228px;
-}
-
-.bullet#p4 {
-  top: 484px;
-  left: -228px;
 }
