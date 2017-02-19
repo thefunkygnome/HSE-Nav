@@ -1,15 +1,18 @@
 button {
+  font-family: 'Avenir Regular', sans-serif;
   display: block;
-  border: 2px solid #141414;
-  background: white;
-  width: 112px;
-  height: 52px;
-  font-size: 20px;
+  border: 5px solid white;
+  background: none;
+  width: 138px;
+  height: 64px;
+  font-size: 25px;
+  color: white;
+  margin: 455px 0 0 82px;
 }
 
 button:hover {
-  background: black;
-  color: white;
+  background: white;
+  color: #3627AF;
 }
 
 input::-webkit-outer-spin-button,
@@ -31,17 +34,55 @@ input::-webkit-inner-spin-button {
 nav.back {
   display: block;
   position: absolute;
-  border-left: 3px black solid;
-  border-bottom: 3px black solid;
+  border-left: 3px white solid;
+  border-bottom: 3px white solid;
   transform: rotate(45deg);
-  height: 20px;
-  width: 20px;
-  margin: 35px;
+  height: 13px;
+  width: 13px;
+  margin: 27px;
 }
 
 p.back-txt {
   display: block;
-  font-size: 18px;
-  width: 54px;
-  height: 18px;
+  font-family: 'Avenir Regular', sans-serif;  
+  font-size: 17px;
+  width: 49px;
+  height: 23px;;
+  color: white;
+  margin: 26px 0 0 44px;
+}
+
+.bullet {
+  display: block;
+  position: fixed;
+  font-family: 'Futuris Black', sans-serif;
+  height: 46px;
+  font-size: 110px;
+  line-height: 47px;
+  text-align: center;
+  color: white;
+  right: 0;
+  left: -413px;
+  bottom: 0;
+  margin: auto;
+}
+
+.bullet#p1 {
+  top: -385px;
+  left: -226px;
+}
+
+.bullet#p2 {
+  top: -80px;
+  left: -228px;
+}
+
+.bullet#p3 {
+  top: 203px;
+  left: -228px;
+}
+
+.bullet#p4 {
+  top: 484px;
+  left: -228px;
 }

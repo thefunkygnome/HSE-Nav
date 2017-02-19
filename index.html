@@ -6,19 +6,41 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery.js" charset="utf-8"></script>
     <script src="js/nav.js" charset="utf-8"></script>
+    <!-- <script src="js/anim.js" charset="utf-8"></script> -->
   </head>
   <body>
+
+    <figure class="fig1"></figure>
+    <figure class="fig2"></figure>
+    <figure class="fig3"></figure>
 
     <div id="back-nav" style="display: none;">
       <nav class="back"></nav>
       <p class="back-txt">Назад</p>
     </div>
 
-    <p id="main">Мне нужно попасть в <input type="number" id="aud" value=""> аудиторию</p>
+    <p class="about-txt-1">Проект выполнен в рамках самостоятельной работы по арт-практике.</p>
+    <p class="about-txt-2">Куратор: Захар День <br> Делал: Тимур Гусейнов <br> Группа Б16ДЗ07 <br> Февраль 2017</p>
+
+    <p id="main">Мне нужно попасть в <input type="number" id="aud" value="" maxlength="3"> аудиторию</p>
 
     <button type="button" name="button" id="nav-btn"> Как? </button>
 
-    <p id="nav-txt-1"></div>
+    <p class="about">О проекте</p>
+
+    <nav class="route" style="display: none;">
+      <div class="bullet" id="p1">1</div>
+      <p id="nav-txt-1"></div>
+      <div class="bullet" id="p2">2</div>
+      <p id="nav-txt-2"></div>
+      <div class="bullet" id="p3">3</div>
+      <p id="nav-txt-3">Спустись <br>по лестнице</div>
+      <div class="bullet" id="p4">4</div>
+      <p id="nav-txt-4">Нужная аудитория - третья слева</div>
+
+    </nav>
+
+
 
   </body>
 </html>

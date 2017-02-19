@@ -1,56 +1,168 @@
 @font-face {
-  font-family: 'Avenir';
+  font-family: 'Avenir Regular';
   src: url(../fonts/avenir-reg.otf) format("opentype");
 }
 
+@font-face {
+  src: url(../fonts/avenir-med.otf) format("opentype");
+}
+
+@font-face {
+  font-family: 'Futuris Black';
+  src: url(../fonts/futuris-black.otf) format("opentype");
+}
+
+* {
+  transition: all .25s ease-in-out;
+}
+
+body {
+  /*background-image: url(../img/mockup/about.png);
+  background-repeat: no-repeat;*/
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(38deg, #3023ae, #b487d5);
+  background-size: 100% 100%;
+
+  -webkit-animation: bg-grad 43s ease infinite;
+  -moz-animation: bg-grad 43s ease infinite;
+  -o-animation: bg-grad 43s ease infinite;
+  animation: bg-grad 43s ease infinite;
+}
+
+@-webkit-keyframes bg-grad {
+    0%{background-position:14% 0%}
+    50%{background-position:87% 100%}
+    100%{background-position:14% 0%}
+}
+@-moz-keyframes bg-grad {
+    0%{background-position:14% 0%}
+    50%{background-position:87% 100%}
+    100%{background-position:14% 0%}
+}
+@-o-keyframes bg-grad {
+    0%{background-position:14% 0%}
+    50%{background-position:87% 100%}
+    100%{background-position:14% 0%}
+}
+@keyframes bg-grad {
+    0%{background-position:14% 0%}
+    50%{background-position:87% 100%}
+    100%{background-position:14% 0%}
+}
+
 p {
-  font-family: 'Avenir', sans-serif;
+  font-family: 'Avenir Regular', sans-serif;
 }
 
 p#main {
-  font-family: 'Avenir', sans-serif;
-  font-size: 30px;
-  min-width: 255px;
-  height: 96px;
-  text-align: center;
-  top: -20%;
+  font-family: 'Futuris Black', sans-serif;
+  font-size: 60px;
+  width: 640px;
+  line-height: 72px;
+  height: 144px;;
+  text-align: left;
+  color: white;
+  margin: 280px 0 0 82px;
 }
 
 input {
+  background: none;
   border: none;
-  border-bottom: 1px black solid;
-  font-family: 'Avenir', sans-serif;
+  border-bottom: 3px white solid;
+  font-family: 'Futuris Black', sans-serif;
+  font-size: 60px;
+  width: 146px;
+  color: white;
+  text-align: center;
+}
+
+.about {
+  font-family: 'Avenir Medium', sans-serif;
+  font-size: 25px;
+  color: white;
+  right: 82px;
+  top: 398px;
+}
+
+.about:hover {
+  text-decoration: underline;
+}
+
+.about-txt-1,
+.about-txt-2 {
+  display: none;
+  color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.about-txt-1 {
+  font-family: 'Avenir Medium', sans-serif;
   font-size: 30px;
-  max-width: 51px;
+  width: 396px;
+  height: 113px;
+  margin-top: 300px;
+  line-height: 37px;
+}
+
+.about-txt-2 {
+  font-family: 'Avenir Regular', sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  width: 186px;
+  margin-top: 452px;
+  margin-left: 522px;
+  height: 78px;
 }
 
 #nav-txt-1 {
-  display: none;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  font-size: 30px;
-  min-width: 255px;
-  height: 96px;
-  text-align: center;
-  top: -20%;
+  top: 168px;
+  left: 674px;
 }
 
 #nav-txt-2 {
-  display: none;
+  top: 315px;
+  left: 674px;
+}
+
+#nav-txt-1,
+#nav-txt-2 {
+  width: 164px;
+}
+
+#nav-txt-3 {
+  width: 180px;
+  top: 456px;
+  left: 674px;
+}
+
+#nav-txt-4 {
+  top: 573px;
+  left: 674px;
+  width: 190px;
+}
+
+#nav-txt-1,
+#nav-txt-2,
+#nav-txt-3,
+#nav-txt-4 {
+  display: block;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  font-family: 'Avenir Regular', sans-serif;
   font-size: 30px;
-  min-width: 255px;
-  height: 96px;
-  text-align: center;
+  color: white;
+  text-align: left;
+  line-height: 41px;
+  right: 0;
+  left: 107px;
+  bottom: 0;
+  margin: auto;
 }
 
 
@@ -58,9 +170,40 @@ p,
 button#nav-btn {
   display: block;
   position: absolute;
-  top: 0;
-  bottom: 0;
+}
+
+.route {
+  width: 400px;
+  height: 400px;
+}
+
+figure {
+  /*display: block;*/
+  position: fixed;
+  background-repeat: no-repeat;
+  /*right: 0;
   left: 0;
-  right: 0;
-  margin: auto;
+  bottom: 0;
+  margin: auto;*/
+
+}
+.fig1 {
+  width: 165px;
+  height: 133px;
+  background-image: url(../img/fig1.svg);
+  margin: 90px 0 0 740px;
+}
+
+.fig2 {
+  width: 264px;
+  height: 205px;
+  background-image: url(../img/fig2.svg);
+  margin: 490px 0 0 120px;
+}
+
+.fig3 {
+  width: 222px;
+  height: 223px;
+  background-image: url(../img/fig3.svg);
+  margin: 580px 0 0 1170px;
 }
