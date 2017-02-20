@@ -15,6 +15,10 @@ button:hover {
   color: #3627AF;
 }
 
+button:focus {
+  outline: none;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     /* display: none; <- Crashes Chrome on hover */
@@ -27,15 +31,20 @@ input::-webkit-inner-spin-button {
   position: fixed;
   justify-content: space-between;
   flex-direction: row;
-  width: 189px;
-  height: 92px;
+  width: 93px;
+  height: 46px;
+}
+
+#back-nav:hover {
+  margin-left: -4px;
 }
 
 nav.back {
   display: block;
   position: absolute;
-  border-left: 3px white solid;
-  border-bottom: 3px white solid;
+  border-bottom-left-radius: 3px;
+  border-left: 2px white solid;
+  border-bottom: 2px white solid;
   transform: rotate(45deg);
   height: 13px;
   width: 13px;
@@ -49,7 +58,7 @@ p.back-txt {
   width: 49px;
   height: 23px;;
   color: white;
-  margin: 26px 0 0 44px;
+  margin: 25px 0 0 44px;
 }
 
 .bullet {

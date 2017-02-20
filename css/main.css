@@ -13,7 +13,7 @@
   src: url(../fonts/futuris-black.otf) format("opentype");
 }
 
-* {
+*:not(figure) {
   transition: all .25s ease-in-out;
 }
 
@@ -77,6 +77,10 @@ input {
   width: 146px;
   color: white;
   text-align: center;
+}
+
+input:focus {
+  outline: none;
 }
 
 .about {
