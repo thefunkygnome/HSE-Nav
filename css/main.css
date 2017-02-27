@@ -21,8 +21,10 @@ body {
   /*background-image: url(../img/mockup/about.png);
   background-repeat: no-repeat;*/
   display: flex;
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
+  background-position: top center;
+  background-repeat: no-repeat;
   background: linear-gradient(38deg, #3023ae, #b487d5);
   background-size: 100% 100%;
 
@@ -176,26 +178,26 @@ figure {
   margin: auto;*/
 
 }
-.fig1 {
-  width: 165px;
-  height: 133px;
-  background-image: url(../img/fig1.svg);
-  margin: 90px 0 0 740px;
-}
+  .fig1 {
+    width: 165px;
+    height: 133px;
+    background-image: url(../img/fig1.svg);
+    margin: 90px 0 0 740px;
+  }
 
-.fig2 {
-  width: 264px;
-  height: 205px;
-  background-image: url(../img/fig2.svg);
-  margin: 490px 0 0 120px;
-}
+  .fig2 {
+    width: 264px;
+    height: 205px;
+    background-image: url(../img/fig2.svg);
+    margin: 490px 0 0 120px;
+  }
 
-.fig3 {
-  width: 222px;
-  height: 223px;
-  background-image: url(../img/fig3.svg);
-  margin: 580px 0 0 1170px;
-}
+  .fig3 {
+    width: 222px;
+    height: 223px;
+    background-image: url(../img/fig3.svg);
+    margin: 580px 0 0 1170px;
+  }
 
 .hselogo {
   display: block;
@@ -205,8 +207,110 @@ figure {
   background-repeat: no-repeat;
   background-image: url(../img/hse-logo.svg);
   margin: auto;
-  top: 610px;
+  top: 620px;
   bottom: 0;
   right: 0;
   left: 0;
+}
+
+
+figure {
+animation-name: rotate;
+animation-iteration-count: infinite;
+animation-duration: 80s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+  .about {
+    top: 20px;
+    left: 20px;
+  }
+
+  p#main {
+    margin:280px 0 0 20px;
+  }
+
+  button {
+    margin-left: 20px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .about {
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+  }
+
+  p#main {
+    font-size: 40px;
+    line-height: 42px;
+    width: 440px;
+    margin: 320px 0 0 20px;
+  }
+
+  input {
+    font-size: 40px;
+    width: 105px;
+  }
+
+  button {
+    width: 90px;
+    height: 42px;
+    font-size: 16px;
+    border: 3px solid white;
+    margin-left: 20px;
+  }
+
+  .err {
+    margin: 275px 0 0 23px;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .about {
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+  }
+
+  p#main {
+    font-size: 25px;
+    line-height: 37px;
+    width: 440px;
+    margin: 320px 0 0 20px;
+  }
+
+  input {
+    font-size: 25px;
+    width: 70px;
+  }
+
+  button {
+    width: 90px;
+    height: 42px;
+    font-size: 16px;
+    border: 3px solid white;
+    margin-left: 20px;
+  }
+
+  .about-txt-1 {
+    font-size: 20px;
+    width: 263px;
+  }
 }

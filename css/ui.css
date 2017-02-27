@@ -71,3 +71,17 @@ p.back-txt {
   text-align: center;
   color: white;
 }
+
+.err {
+  position: absolute;
+  width: 253px;
+  height: 33px;
+  background-color: #F44336;
+  color: white;
+  font-family: 'Avenir Regular', sans-serif;
+  font-size: 12px;
+  text-align: center;
+  line-height: 33px;
+  margin: 470px 0 0 260px;
+  display: none;
+}

@@ -11,44 +11,8 @@ function get_value_2exp() {
   }
 }
 
-// function get_value_2() {
-//   var inputValue = $('#aud').val()
-//   var valueLength = inputValue.length
-//
-//   console.log(inputValue.substr(valueLength * 0,1))
-//   console.log(inputValue.substr(valueLength - 1) <= 6)
-//
-//   if (inputValue.substr(valueLength - 1) <= 6) {
-//     console.log('Поверни направо')
-//   } else {
-//     console.log('Поверни налево')
-//   }
-// }
-
-$(function() {
-  $('#nav-btn').click(function() {
-    get_value_1()
-    get_value_2exp()
-    $('#nav-txt-1').text('Поднимись на' + ' '+ $('#aud').val().substr(0, 1) + ' ' + 'этаж')
-
-    if ($('#aud').val().substr(1, 1) <= 6) {
-      $('#nav-txt-2').text('Поверни направо')
-    } else {
-      $('#nav-txt-2').text('Поверни налево')
-    }
-
-    $('#aud').hide()
-    $('#nav-btn').hide()
-    $('#main').hide()
-    $('.about').hide()
-    $('.hselogo').hide()
-    $('.route').show()
-    $('#back-nav').show()
-  })
-})
-
-$(function(){
-  $('#back-nav').click(function() {
+function route_active(action) {
+  if (action == 'show') {
     $('.route').hide()
     $('#back-nav').hide()
     $('.about-txt-1').hide()
@@ -58,10 +22,62 @@ $(function(){
     $('#main').show()
     $('.about').show()
     $('.hselogo').show()
-  })
-})
+  } else {
+    $('#aud').hide()
+    $('#nav-btn').hide()
+    $('#main').hide()
+    $('.about').hide()
+    $('.hselogo').hide()
+    $('.route').show()
+    $('#back-nav').show()
+  }
+}
+
+function showNav() {
+
+
+
+  $('input#aud').css({'border-bottom': '3px white solid', 'color': 'white'})
+  get_value_1()
+  get_value_2exp()
+  $('#nav-txt-1').text('Поднимись на' + ' '+ $('#aud').val().substr(0, 1) + ' ' + 'этаж')
+
+  if ($('#aud').val().substr(1, 1) <= 6) {
+    $('#nav-txt-2').text('Поверни направо')
+  } else {
+    $('#nav-txt-2').text('Поверни налево')
+  }
+
+  route_active('hide')
+  $('.err').hide()
+
+};
+
+function showError() {
+  $('input#aud').css({'border-bottom': '3px #F44336 solid', 'color': '#F44336'})
+  $('.err').show()
+}
+
+
 
 $(function() {
+
+  $('#nav-btn').click(function() {
+    if ($('#aud').val() >= 101 && $('#aud').val() <= 899) {
+      showNav()
+    } else {
+      showError()
+    }
+
+  })
+
+
+
+
+  $('#back-nav').click(function() {
+    route_active('show')
+  })
+
   $('.about').click(function() {
     $('#aud').hide()
     $('#nav-btn').hide()
@@ -69,14 +85,14 @@ $(function() {
     $('.about').hide()
     $('.about-txt-1').show()
     $('.about-txt-2').show()
+
     $('#back-nav').show()
   })
-})
 
-$(function(event) {
+
   $("#aud").keyup(function(event) {
     if (event.keyCode == 13) {
-      $("#nav-btn").click();
+      $("#nav-btn").click()
     }
-  });
-});
+  })
+})
