@@ -35,6 +35,9 @@ function route_active(action) {
 
 function showNav() {
 
+  var audNum = $('#aud').val()
+
+  console.log(audNum)
 
 
   $('input#aud').css({'border-bottom': '3px white solid', 'color': 'white'})
@@ -47,6 +50,20 @@ function showNav() {
   } else {
     $('#nav-txt-2').text('Поверни налево')
   }
+
+  if (audNum == 384) {
+    console.log('true')
+    $('#p4').show()
+    $('#nav-txt-4').show()
+    $('#nav-txt-2').text('Поверни налево и иди до конца')
+    $('#nav-txt-3').text('Поднимись по лестнице')
+    $('#nav-txt-4').text('Готово! Ты молодец!')
+  } else if (audNum == 560) {
+    $('#nav-txt-3').text('Нужна аудитория - прямо по курсу!')
+    $('#p4').hide()
+    $('#nav-txt-4').hide()
+  }
+
 
   route_active('hide')
   $('.err').hide()
@@ -71,9 +88,6 @@ $(function() {
 
   })
 
-
-
-
   $('#back-nav').click(function() {
     route_active('show')
   })
@@ -85,6 +99,7 @@ $(function() {
     $('.about').hide()
     $('.about-txt-1').show()
     $('.about-txt-2').show()
+    $('.err').hide()
 
     $('#back-nav').show()
   })
