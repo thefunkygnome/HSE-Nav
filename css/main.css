@@ -140,7 +140,7 @@ input:focus {
   text-align: left;
   line-height: 41px;
   left: 29px;
-  width: 200px;
+  width: 520px;
 }
 
 
@@ -158,7 +158,7 @@ button#nav-btn {
   flex-wrap: wrap;
   flex-direction: row;
   align-content: flex-start;
-  width: 300px;
+  width: 500px;
   height: 538px;
   top: 0;
   right: 0;
@@ -260,7 +260,7 @@ animation-duration: 80s;
     font-size: 40px;
     line-height: 42px;
     width: 440px;
-    margin: 320px 0 0 20px;
+    margin: 200px 0 0 20px;
   }
 
   input {
@@ -274,11 +274,31 @@ animation-duration: 80s;
     font-size: 16px;
     border: 3px solid white;
     margin-left: 20px;
+    margin-top: 330px;
   }
 
   .err {
-    margin: 275px 0 0 23px;
+    margin: 155px 0 0 23px;
   }
+
+  .fig1 {
+    width: 83px;
+    height: 67px;
+    margin: 90px 0 0 80px;
+  }
+
+  .fig2 {
+    width: 132px;
+    height: 103px;
+    margin: 410px 0 0 120px;
+  }
+
+  .fig3 {
+    width: 111px;
+    height: 112px;
+    margin: 580px 0 0 40px;
+  }
+
 }
 
 
@@ -293,7 +313,6 @@ animation-duration: 80s;
     font-size: 25px;
     line-height: 37px;
     width: 440px;
-    margin: 320px 0 0 20px;
   }
 
   input {
