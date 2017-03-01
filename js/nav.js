@@ -52,10 +52,11 @@ function showNav() {
     $('#nav-txt-2').text('Поверни налево')
   }
 
-  if (audNum == 375) {
+  if (audNum == 269) {
     console.log('true')
     $('#p4').show()
     $('#nav-txt-4').show()
+    $('#nav-txt-2').text('Поверни налево')
     $('#nav-txt-3').text('Пройди первую лестницу')
     $('#nav-txt-4').text('Нужная аудитория –' + '\n' + 'третья справа')
   } else if (audNum == 560) {
